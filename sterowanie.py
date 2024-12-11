@@ -1,4 +1,5 @@
 import POU
+
 # Prędkość ruchu
 step = 10
 t = pou
@@ -48,3 +49,6 @@ screen.onkey(stop_left, "KeyRelease_Left")  # Zatrzymaj, gdy klawisz lewy jest z
 screen.onkey(stop_right, "KeyRelease_Right")  # Zatrzymaj, gdy klawisz prawy jest zwolniony
 screen.onkey(stop_left, "KeyRelease_a")  # Zatrzymaj, gdy "a" jest zwolnione
 screen.onkey(stop_right, "KeyRelease_d")  # Zatrzymaj, gdy "d" jest zwolnione
+
+#pull request
+
