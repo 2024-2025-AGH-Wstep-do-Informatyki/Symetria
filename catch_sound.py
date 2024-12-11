@@ -1,10 +1,10 @@
 import pygame
 
-pygame.mixer.inmit()
+pygame.mixer.innit()
 
-sound =mpygame.mixer.Sound("catch_sound.wav")
+sound = mpygame.mixer.Sound("catch_sound.wav")
 
-def paly_sound():
+def play_sound():
   sound.play()
 
 play_sound()
