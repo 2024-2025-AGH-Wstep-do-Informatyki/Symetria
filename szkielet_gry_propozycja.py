@@ -16,7 +16,11 @@ screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Gra")
 clock = pygame.time.Clock()
 
-player_width, player_height = 50, 50
+player_image = pygame.image.load('kot.svg')  # Zmień ścieżkę na odpowiednią
+player_width, player_height = player_image.get_width(), player_image.get_height()
+player_image=pygame.transform.scale(player_image,[player_height//5,player_width//5])
+
+
 player_x, player_y = WIDTH // 2 - player_width // 2, HEIGHT - 100
 good_food_list = []
 bad_food_list = []
@@ -28,7 +32,7 @@ protection_timer = 0
 protection_duration = 5000
 
 def draw_player(x, y):
-    pygame.draw.rect(screen, GREEN, (x, y, player_width, player_height))
+    screen.blit(player_image, (x, y))
 
 def draw_good_food():
     for food in good_food_list:
